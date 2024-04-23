@@ -1,12 +1,20 @@
 // document
-let currentText = document.getElementById;
+let currentElement = document.getElementById('password');
+let currentText = currentElement.innerHTML;
 
-const userName = prompt 'Inserisci il tuo nome';
-
-const userLastName = prompt 'Inserisci il tuo cognome';
-
-const favColor = prompt 'Inserisci il tuo colore preferito';
+// prompt nome
+const userName = prompt('Inserisci il tuo nome');
+// prompt cognome
+const userLastName = prompt('Inserisci il tuo cognome');
+//prompt colore preferito
+const favColor = prompt('Inserisci il tuo colore preferito');
 
 // generating  a random number
 const a = Math.random();
 
+currentText = `${currentText} ${userName} ${userLastName} ${favColor} ${a}`;
+
+// console input
+console.log(currentText);
+// browser input
+currentElement.innerHTML = currentText;
