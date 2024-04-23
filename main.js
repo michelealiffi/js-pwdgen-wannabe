@@ -10,9 +10,9 @@ const userLastName = prompt('Inserisci il tuo cognome');
 const favColor = prompt('Inserisci il tuo colore preferito');
 
 // generating  a random number
-const a = Math.random();
+const a = Math.floor(Math.random() * (0 - 99));
 
-currentText = `${currentText} ${userName} ${userLastName} ${favColor} ${a}`;
+currentText = `${currentText}${userName}${userLastName}${favColor}${a}`;
 
 // console input
 console.log(currentText);
